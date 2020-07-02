@@ -1,6 +1,9 @@
 package com.DemoProject.Pages;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -8,6 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.DemoProject.Factory.BrowserFactory;
 import com.DemoProject.Factory.DataProviderFactory;
@@ -17,24 +21,31 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.beust.jcommander.Parameter;
 
 
 public class BaseClass {
-public ExtentReports Reports;
-public ExtentTest logger;
-public WebDriver driver;
+public static ExtentReports Reports;
+public static ExtentTest logger;
+public static WebDriver driver;
 	
 	@BeforeSuite
 	public void StatusReport()
 	{
-		
-	
-	ExtentHtmlReporter html=new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/Selenium.html");
+		DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmssZ");
+		 
+		 //get current date time with Date()
+		 Date date = new Date();
+		 
+		 // Now format the date
+		 String date1= dateFormat.format(date);
+		 System.out.println(date1);
+	ExtentHtmlReporter html=new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/Selenium"+date1+".html");
 	Reports=new ExtentReports();
 	Reports.attachReporter(html);
 	System.out.println("*****Log INFO   ---Reporting set---    ****");
-	
 	}
+	
 	@AfterMethod
 	public void TearDownReport(ITestResult result)
 	{
@@ -60,10 +71,22 @@ public WebDriver driver;
 	
 @AfterClass
 public void EndSession()
-{
-	
+{	
 	BrowserFactory.closeBrowser(driver);
 }
+
+
+/*@Parameters({"browser","URL"})
+@BeforeClass
+public void startSession(String browserType, String urlToLoad)
+{
+	System.out.println("*****Log INFO   ---Loading Browser config---    ****");
+	//String browser=DataProviderFactory.getconfig().getPropry("browser");
+	//String url=DataProviderFactory.getconfig().getPropry("URL");
+	driver=BrowserFactory.StartBrowser(browserType, urlToLoad);
+	System.out.println("*****Log INFO   ---Browser config loaded---    ****");
+}
+*/
 
 @BeforeClass
 public void startSession()
@@ -71,7 +94,7 @@ public void startSession()
 	System.out.println("*****Log INFO   ---Loading Browser config---    ****");
 	String browser=DataProviderFactory.getconfig().getPropry("browser");
 	String url=DataProviderFactory.getconfig().getPropry("URL");
-	BrowserFactory.StartBrowser(browser, url);
+	driver=BrowserFactory.StartBrowser(browser, url);
 	System.out.println("*****Log INFO   ---Browser config loaded---    ****");
 }
 }

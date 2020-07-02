@@ -9,11 +9,17 @@ public class LogOutPage {
 	WebDriver driver;
 	By welcomLink=By.id("welcome");
 	By LogoutButton= By.linkText("Logout");
+	
+	
 	public LogOutPage(WebDriver ldriver)
 	{
 		driver=ldriver;
-		utility.WaitAndClick(ldriver, welcomLink);
-		utility.WaitAndClick(ldriver, LogoutButton);
+		
+	}
+	public void logout()
+	{
+		utility.WaitAndClick(driver, welcomLink);
+		utility.WaitAndClick(driver, LogoutButton);
 	}
 	}
 	

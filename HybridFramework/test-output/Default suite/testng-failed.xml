@@ -10,6 +10,7 @@
           <include name="startSession"/>
           <include name="loginWIthAdmin"/>
           <include name="StatusReport"/>
+          <include name="logoutApp"/>
         </methods>
       </class> <!-- com.DemoProject.TestCases.test -->
     </classes>

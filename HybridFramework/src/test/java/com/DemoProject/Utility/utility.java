@@ -2,7 +2,10 @@ package com.DemoProject.Utility;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -60,10 +63,18 @@ public class utility {
 
 	public static String Screenshoot(WebDriver driver)
 	{
+		DateFormat dateFormat =new SimpleDateFormat("yyMMddHHmmssZ");
+		 
+		 //get current date time with Date()
+		 Date date = new Date();
+		 
+		 // Now format the date
+		 String date1= dateFormat.format(date);
+		 
 		TakesScreenshot ts= (TakesScreenshot)driver;
 		File src =ts.getScreenshotAs(OutputType.FILE);
 		
-		File dest=new File(System.getProperty("user.dir")+"/screenshot/selenium.img");
+		File dest=new File(System.getProperty("user.dir")+"/Screenshot/selenium"+date1+".img");
 		try {
 			FileHandler.copy(src,dest);
 			}
