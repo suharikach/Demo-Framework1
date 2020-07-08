@@ -76,7 +76,7 @@ public void EndSession()
 }
 
 
-/*@Parameters({"browser","URL"})
+@Parameters({"browser","URL"})
 @BeforeClass
 public void startSession(String browserType, String urlToLoad)
 {
@@ -86,9 +86,9 @@ public void startSession(String browserType, String urlToLoad)
 	driver=BrowserFactory.StartBrowser(browserType, urlToLoad);
 	System.out.println("*****Log INFO   ---Browser config loaded---    ****");
 }
-*/
 
-@BeforeClass
+
+/*@BeforeClass
 public void startSession()
 {
 	System.out.println("*****Log INFO   ---Loading Browser config---    ****");
@@ -96,5 +96,5 @@ public void startSession()
 	String url=DataProviderFactory.getconfig().getPropry("URL");
 	driver=BrowserFactory.StartBrowser(browser, url);
 	System.out.println("*****Log INFO   ---Browser config loaded---    ****");
-}
+}*/
 }

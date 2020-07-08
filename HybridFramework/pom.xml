@@ -42,10 +42,10 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
         <configuration>
-       <!--  <systemPropertyVariables>-->
-<!--        /* //<browser>${browser}</browser> -->
-<!--     //    <browser>${URL}</browser>*/ -->
-         <!--   </systemPropertyVariables>-->
+     <systemPropertyVariables>
+		<browser>${browser}</browser> 
+		<browser>${URL}</browser>
+         </systemPropertyVariables>
           <suiteXmlFiles>
              <suiteXmlFile>testng1.xml</suiteXmlFile>
           </suiteXmlFiles>
