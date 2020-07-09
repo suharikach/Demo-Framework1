@@ -40,7 +40,8 @@ public static WebDriver driver;
 		 // Now format the date
 		 String date1= dateFormat.format(date);
 		 System.out.println(date1);
-	ExtentHtmlReporter html=new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/Selenium"+date1+".html");
+			ExtentHtmlReporter html=new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/Seleniumreport.html");
+		 //ExtentHtmlReporter html=new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/Selenium"+date1+".html");
 	Reports=new ExtentReports();
 	Reports.attachReporter(html);
 	System.out.println("*****Log INFO   ---Reporting set---    ****");
