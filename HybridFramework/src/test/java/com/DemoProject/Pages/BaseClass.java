@@ -34,7 +34,7 @@ public static WebDriver driver;
 	{
 		DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmssZ");
 		 
-		 //get current date time with Date()
+		 //get current date time with Date() 
 		 Date date = new Date();
 		 
 		 // Now format the date    sd
