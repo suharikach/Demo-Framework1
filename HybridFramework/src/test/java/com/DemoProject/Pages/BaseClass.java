@@ -53,8 +53,7 @@ public static WebDriver driver;
 		if(result.getStatus()==ITestResult.SUCCESS)
 		{
 			try {
-				logger.log(Status.PASS, "Test passed"+result.getThrowable().getMessage(), 
-						MediaEntityBuilder.createScreenCaptureFromPath(utility.Screenshoot(driver)).build());
+				logger.log(Status.PASS, "Test passed",MediaEntityBuilder.createScreenCaptureFromPath(utility.Screenshoot(driver)).build());
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
