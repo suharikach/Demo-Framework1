@@ -52,7 +52,13 @@ public static WebDriver driver;
 		System.out.println("Log info   ****After Test   ****"+result.getStatus());
 		if(result.getStatus()==ITestResult.SUCCESS)
 		{
-			logger.log(Status.PASS, "Test passed");
+			try {
+				logger.log(Status.PASS, "Test passed"+result.getThrowable().getMessage(), 
+						MediaEntityBuilder.createScreenCaptureFromPath(utility.Screenshoot(driver)).build());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		else if(result.getStatus()==ITestResult.FAILURE)
 		{
