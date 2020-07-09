@@ -37,7 +37,7 @@ public static WebDriver driver;
 		 //get current date time with Date()
 		 Date date = new Date();
 		 
-		 // Now format the date  m,n
+		 // Now format the date  
 		 String date1= dateFormat.format(date);
 		 System.out.println(date1);
 			ExtentHtmlReporter html=new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/Seleniumreport.html");
