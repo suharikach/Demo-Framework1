@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39162" started-at="2020-07-02T15:42:55Z" finished-at="2020-07-02T15:43:34Z">
+  <suite name="Default suite" duration-ms="27163" started-at="2020-07-16T13:33:38Z" finished-at="2020-07-16T13:34:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39162" started-at="2020-07-02T15:42:55Z" finished-at="2020-07-02T15:43:34Z">
+    <test name="Default test" duration-ms="27163" started-at="2020-07-16T13:33:38Z" finished-at="2020-07-16T13:34:05Z">
       <class name="com.DemoProject.TestCases.test1">
-        <test-method status="PASS" signature="StatusReport()[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e]" name="StatusReport" is-config="true" duration-ms="773" started-at="2020-07-02T15:42:54Z" finished-at="2020-07-02T15:42:55Z">
+        <test-method status="PASS" signature="StatusReport()[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80]" name="StatusReport" is-config="true" duration-ms="192" started-at="2020-07-16T13:33:38Z" finished-at="2020-07-16T13:33:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StatusReport -->
-        <test-method status="PASS" signature="startSession()[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e]" name="startSession" is-config="true" duration-ms="18752" started-at="2020-07-02T15:42:55Z" finished-at="2020-07-02T15:43:14Z">
+        <test-method status="PASS" signature="startSession()[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80]" name="startSession" is-config="true" duration-ms="15206" started-at="2020-07-16T13:33:38Z" finished-at="2020-07-16T13:33:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSession -->
-        <test-method status="PASS" signature="loginWIthAdmin()[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e]" name="loginWIthAdmin" duration-ms="11176" started-at="2020-07-02T15:43:14Z" finished-at="2020-07-02T15:43:25Z">
+        <test-method status="PASS" signature="loginWIthAdmin()[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80]" name="loginWIthAdmin" duration-ms="8773" started-at="2020-07-16T13:33:53Z" finished-at="2020-07-16T13:34:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWIthAdmin -->
-        <test-method status="PASS" signature="TearDownReport(org.testng.ITestResult)[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e]" name="TearDownReport" is-config="true" duration-ms="1579" started-at="2020-07-02T15:43:25Z" finished-at="2020-07-02T15:43:27Z">
+        <test-method status="PASS" signature="TearDownReport(org.testng.ITestResult)[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80]" name="TearDownReport" is-config="true" duration-ms="869" started-at="2020-07-16T13:34:02Z" finished-at="2020-07-16T13:34:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWIthAdmin status=SUCCESS method=test1.loginWIthAdmin()[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e] output={null}]]]>
+                <![CDATA[[TestResult name=loginWIthAdmin status=SUCCESS method=test1.loginWIthAdmin()[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownReport -->
-        <test-method status="PASS" signature="logoutApp()[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e]" name="logoutApp" duration-ms="2490" started-at="2020-07-02T15:43:27Z" finished-at="2020-07-02T15:43:29Z">
+        <test-method status="PASS" signature="logoutApp()[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80]" name="logoutApp" duration-ms="1493" started-at="2020-07-16T13:34:03Z" finished-at="2020-07-16T13:34:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApp -->
-        <test-method status="PASS" signature="TearDownReport(org.testng.ITestResult)[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e]" name="TearDownReport" is-config="true" duration-ms="279" started-at="2020-07-02T15:43:29Z" finished-at="2020-07-02T15:43:29Z">
+        <test-method status="PASS" signature="TearDownReport(org.testng.ITestResult)[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80]" name="TearDownReport" is-config="true" duration-ms="642" started-at="2020-07-16T13:34:04Z" finished-at="2020-07-16T13:34:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logoutApp status=SUCCESS method=test1.logoutApp()[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e] output={null}]]]>
+                <![CDATA[[TestResult name=logoutApp status=SUCCESS method=test1.logoutApp()[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownReport -->
-        <test-method status="PASS" signature="EndSession()[pri:0, instance:com.DemoProject.TestCases.test1@29ca901e]" name="EndSession" is-config="true" duration-ms="4522" started-at="2020-07-02T15:43:29Z" finished-at="2020-07-02T15:43:34Z">
+        <test-method status="PASS" signature="EndSession()[pri:0, instance:com.DemoProject.TestCases.test1@4ddced80]" name="EndSession" is-config="true" duration-ms="139" started-at="2020-07-16T13:34:05Z" finished-at="2020-07-16T13:34:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndSession -->

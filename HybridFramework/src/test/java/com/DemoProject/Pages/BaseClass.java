@@ -82,19 +82,20 @@ public void EndSession()
 }
 
 
-@Parameters({"browser","URL"})
+//@Parameters({"browser","URL"})
+//@BeforeClass
+//public void startSession(String browserType, String urlToLoad)
+//{
+//	System.out.println("*****Log INFO   ---Loading Browser config---    ****");
+//	//String browser=DataProviderFactory.getconfig().getPropry("browser");
+//	//String url=DataProviderFactory.getconfig().getPropry("URL");
+//	driver=BrowserFactory.StartBrowser(browserType, urlToLoad);
+//	System.out.println("*****Log INFO   ---Browser config loaded---    ****");
+//}
+//
+//
+///*
 @BeforeClass
-public void startSession(String browserType, String urlToLoad)
-{
-	System.out.println("*****Log INFO   ---Loading Browser config---    ****");
-	//String browser=DataProviderFactory.getconfig().getPropry("browser");
-	//String url=DataProviderFactory.getconfig().getPropry("URL");
-	driver=BrowserFactory.StartBrowser(browserType, urlToLoad);
-	System.out.println("*****Log INFO   ---Browser config loaded---    ****");
-}
-
-
-/*@BeforeClass
 public void startSession()
 {
 	System.out.println("*****Log INFO   ---Loading Browser config---    ****");
@@ -102,5 +103,6 @@ public void startSession()
 	String url=DataProviderFactory.getconfig().getPropry("URL");
 	driver=BrowserFactory.StartBrowser(browser, url);
 	System.out.println("*****Log INFO   ---Browser config loaded---    ****");
-}*/
+}
+//*/
 }

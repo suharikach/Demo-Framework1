@@ -14,13 +14,13 @@ public class BrowserFactory {
 	if(browsertype.equalsIgnoreCase("Chrome"))
 	{
 	
-		System.setProperty("webdriver.chrome.driver", "D:/selinium/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/sai.suharika.chakka/suharika/selenium/chromedriver_win32/chromedriver83.exe");
 		driver=new ChromeDriver();
 	}
 	else if(browsertype.equalsIgnoreCase("IE"))
 	
 	{		
-		System.setProperty("webdriver.ie.driver", "D:/selinium/IEDriverServer.exe");
+		System.setProperty("webdriver.ie.driver", "C:/Users/sai.suharika.chakka/suharika/selenium/chromedriver_win32/chromedriver83.exe");
 		driver=new InternetExplorerDriver();
 	}
 	driver.get(url);

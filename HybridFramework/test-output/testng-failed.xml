@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DemoProject.TestCases.test">
+      <class name="com.DemoProject.TestCases.test1">
         <methods>
           <include name="EndSession"/>
+          <include name="logoutApp"/>
           <include name="TearDownReport"/>
           <include name="startSession"/>
-          <include name="loginWIthAdmin"/>
           <include name="StatusReport"/>
-          <include name="logoutApp"/>
+          <include name="loginWIthAdmin"/>
         </methods>
-      </class> <!-- com.DemoProject.TestCases.test -->
+      </class> <!-- com.DemoProject.TestCases.test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
