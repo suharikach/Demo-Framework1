@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.DemoProject.TestCases.test1"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

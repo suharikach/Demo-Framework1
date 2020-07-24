@@ -14,6 +14,9 @@ public ConfigDataProvider()
 	pro= new Properties();
 	try {
 		pro.load(new FileInputStream(new File(System.getProperty("user.dir")+"/Configuration/config.properties")));
+		//File f1=new File("jhdks.properties")
+		//FileInputStream fis= new FileINputSTream(f1);
+		//pro.load(fis);
 	} 
 	catch (IOException e)
 	{
